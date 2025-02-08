@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #afd5ef, #69d3fa);
+}
+#orangesky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #f6ae29, #f66d29, #2780a0);
+    opacity: 0;
+}
+#nightsky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #00000e, #000000, #00000e, #000000, #00000e);
+    opacity: 0;
+}
+.stars {
+    background: black url(./images/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+}
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url(./images/twinkling.png) repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    -moz-animation:move-background 70s linear infinite;
+    -ms-animation:move-background 70s linear infinite;
+    -o-animation:move-background 70s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 70s linear infinite;
+	
+}
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+
+
+
+#sun {
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    border-radius: 50%;
+    top: 55%;
+    left: 47.5%;
+    background: rgb(255, 211, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(10px);
+}
+#star {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: white;
+}
+#starblur {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    top: 50%;
+    left: 40%;
+    filter: blur(20px);
+    background: radial-gradient(circle, #ffd34d, #f6ae29, #f66d29, transparent);
+    opacity: 1;
+}
+#horizonblur {
+    position: absolute;
+    width: 150%;
+    height: 10%;
+    background: linear-gradient(to top, #ffd34d, #f6ae29, #f66d29, transparent);
+    top: 43%;
+    left: -10%;
+    filter: blur(20px);
+    opacity: 1;
+}
+
+#clouds {
+    background-image: url(./images/Firewatch_clouds.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#hills {
+    background-image: url(./images/Firewatch_hills.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#block1 {
+    background-image: url(./images/Firewatch_color.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#block2 {
+    background-image: url(./images/Firewatch_grey.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+#ovrlay {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, #f6ae29, #f66d29, transparent);
+    opacity: 0.25;
+}
